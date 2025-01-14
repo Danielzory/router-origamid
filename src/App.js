@@ -5,6 +5,7 @@ import Sobre from './Componentes/Sobre/Sobre';
 import NotFound from './Componentes/NotFound/NotFound';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './Componentes/Login/Login';
+import Produto from './Componentes/Produto/Produto';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={ <Home />} />
         <Route path='sobre' element={<Sobre />} />
         <Route path='login' element={<Login />} />
+        <Route path='produto/:id' element={<Produto />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
