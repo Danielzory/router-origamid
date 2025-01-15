@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../Head/Head';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -16,6 +17,7 @@ const Login = () => {
 
   return (
     <div>
+      <Head title = "Login" description = "Realize o Login aqui" />
       <h2>Realize seu login</h2>
       <button onClick={handleClick}>Logar</button>
       {login && <p>Login Realizado com sucesso!</p>}
